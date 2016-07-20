@@ -13,6 +13,32 @@ ul { padding-left: 1.4em; list-style:square; }
 q:before, q:after { content:''; }
 /*end reset */
 
+#link-navegation{
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  font-size: 1em;
+  font-family:sans-serif;
+
+  background-color: #872E30;
+
+  margin: 4px;
+
+  border: none;
+  border-radius: 5px;
+
+  padding: 5px;
+
+  top: 0;
+  right: 0;
+  position: fixed;
+}
+
+#link-navegation:hover{
+  background-color: #75070A;
+}
+
  /*WEIGHT*/
  /*Es el peso de la Fuente se utiliza con font-weight*/
  .primera-parte{
@@ -340,8 +366,123 @@ q:before, q:after { content:''; }
 }
 
 /*OVERFLOW*/
+/*Especifica que tanto se recorta el contenido y añade las scroolbars cuando el contenido de un elemento es más grande que la área especifica*/
+
+.sexta-parte{
+  margin: auto;
+  margin: 75px;
+
+  border: solid 3px;
+  border-radius: 5px;
+  border-color: #044845;
+
+  font-family: serif;
+  font-size: 1.2em;
+
+  padding:10px;
+}
+.sexta-parte div{
+  width: 95%;
+  height: 100px;
+
+  border: none;
+  border-radius: 5px;
+
+  margin: 20px;
+
+  padding: 8px;
+
+  background-color: #3EB7B2;
+}
+.sexta-parte h1{
+  font-weight: bolder;
+  text-align: center;
+
+  margin: 5px;
+}
+.sexta-parte p{
+  text-align: justify;
+}
+.mostrar{
+  color: #872E30;
+  font-weight: bolder;
+}
+.over-visible{
+  overflow: visible;
+}
+.over-hidden{
+  overflow: hidden;
+}
+.over-scroll{
+  overflow: scroll;
+}
+.over-auto{
+  overflow: auto;
+}
+.over-xandy{
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
  /*FLOAT*/
  /*Acomoda el elemento a nuestro placer olvidando valores predefinidos como position*/
+
+ .septima-parte{
+   margin: auto;
+   margin: 75px;
+
+   border: solid 3px;
+   border-radius: 5px;
+   border-color: #044845;
+
+   font-family: serif;
+   font-size: 1.2em;
+
+   padding:10px;
+
+   overflow: auto;
+ }
+ .septima-parte h1{
+   text-align: center;
+   margin: 5px;
+   text-transform: uppercase;
+ }
+ .septima-parte div{
+   width: 50%;
+   text-align: center;
+ }
+ .flo-left{
+   background: #4D6F06;
+   color: white;
+   float: left;
+ }
+ .flo-right{
+   background: #65802B;
+   color: white;
+   float: right;;
+ }
+
+ .septima-parte--sinOver{
+   margin: auto;
+   margin: 75px;
+
+   border: solid 3px;
+   border-radius: 5px;
+   border-color: #044845;
+
+   font-family: serif;
+   font-size: 1.2em;
+
+   padding:10px;
+ }
+ .septima-parte--sinOver h1{
+   text-align: center;
+   margin: 5px;
+   text-transform: uppercase;
+ }
+ .septima-parte--sinOver div{
+   width: 50%;
+   text-align: center;
+ }
 
  /*POSITION*/
  /*Define la posicion de un elemento*/
