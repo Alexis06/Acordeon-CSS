@@ -1,7 +1,7 @@
 /* reset styles    RESTAURA TODOS LOS ESTILOS POR DEFECTO DEL NAVEGADOR*/
 html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset, blockquote {
- padding: 0; 
- margin: 0;
+ padding: 0;
+ margin: 0; 
  font-size: 100%;
  font-weight: normal;
 }
@@ -38,7 +38,31 @@ q:before, q:after { content:''; }
 #link-navegation:hover{
   background-color: #75070A;
 }
+#link-navegation2{
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  font-size: 1em;
+  font-family:sans-serif;
 
+  background-color: #872E30;
+
+  margin: 4px;
+
+  border: none;
+  border-radius: 5px;
+
+  padding: 5px;
+
+  top: 0;
+  left: 0;
+  position: fixed;
+}
+
+#link-navegation2:hover{
+  background-color: #75070A;
+}
  /*WEIGHT*/
  /*Es el peso de la Fuente se utiliza con font-weight*/
  .primera-parte{
@@ -484,13 +508,38 @@ q:before, q:after { content:''; }
    text-align: center;
  }
 
- /*POSITION*/
- /*Define la posicion de un elemento*/
- /*BORDER*/
- /*OVERFLOW*/
-/*ANIMATION*/
-/*BOX-SIZING*/
-/*UNIDADES DE MEDIDA*/
+.octava-parte{
+  margin: auto;
+  margin: 10% 20%;
+
+  padding: 10px;
+
+  border: solid 3px;
+  border-color: #044845;
+  border-radius: 5px;
+
+  font-family: sans-serif;
+  font-size: 1.3em;
+}
+.octava-parte h1{
+  text-transform: uppercase;
+  text-align: center;
+  color: #65802B;
+  margin-bottom: 10px;
+}
+.texto{
+  padding: 5px;
+}
+ li{
+    list-style: circle;
+}
+
+.link{
+  text-decoration: none;
+  font-size: 2em;
+  font-family: sans-serif;
+  padding: 5px 10px 10px 10px;
+}
 
 /*RESPONSIVE DESING*/
 /*1. Viewport
