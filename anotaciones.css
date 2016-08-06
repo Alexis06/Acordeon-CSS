@@ -541,7 +541,7 @@ q:before, q:after { content:''; }
   padding: 5px 10px 10px 10px;
 }
 
-/*PSEUDO-CLASS*/
+/*OPACITY*/
 .novena-parte{
   margin: auto;
   margin: 10% 20%;
@@ -620,6 +620,125 @@ div .T-Text-Transparent-Box{
 
   font-size: 1em;
   color: #044845;
+}
+/*NAV BAR*/
+.nav-bar {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #366C6A;
+}
+.nav-bar--li{
+  float: left;
+  color: #99A4A3;
+  list-style: none;
+  display: block;
+  padding: 8px;
+  text-align: center;
+  font-size: 1.2em;
+  text-align: center;
+}
+.nav-bar--li:hover{
+  background-color: #122423;
+}
+.nav-bar li {
+  margin-left: 80px;
+  font-size: 1.5em;
+}
+.nav-bar--a{
+  text-decoration: none;
+}
+.nav-bar--a:visited{
+  color: #99A4A3;
+}
+/*DROPDOWN*/
+.nav-bar--DD{/*Palabra de la que se despliega el menu*/
+  float: left;
+  color: #99A4A3;
+  list-style: none;
+  display: block;
+  padding: 8px;
+  text-align: center;
+  font-size: 1.2em;
+  text-align: center;
+  position: relative;/*Para que a la lista desplegable se le de una posicion absoluta*/
+}
+.ol-DD{/*Lista desplegable*/
+  display: none;
+  position: absolute;
+  min-width: 100px;
+  margin-top: 43px;
+  margin-left: -242px;
+}
+.list-DD{
+  list-style: none;
+  padding: 5px 2px;
+  background-color: red;
+  background-color:  #122423;
+  color: #99A4A3;
+}
+li:last-child{
+  border-bottom: none;
+}
+
+.list-DD:hover{
+  border-bottom: solid #99A4A3 1px;
+  background-color:  #366C6A;
+}
+.nav-bar--DD:hover{
+  background-color: #122423;
+  cursor: pointer;
+}
+.nav-bar:hover .ol-DD{/*Del nava bar padre aparecera una nueva lista*/
+  display: inline-block;
+  transition: 1s;
+}
+.pal{
+  padding: 20px;
+  font-size: 2em;
+  position: relative;
+  display: inline-block;
+}
+.pal-oculta{
+  visibility: hidden;
+  padding: 0 5px;
+  font-size: .8em;
+  background-color: #366C6A;
+  color: #99A4A3;
+  position: absolute;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: -30px;
+  margin-left: 60px;
+  display: inline-block;
+}
+.pal:hover .pal-oculta{
+   visibility: visible;
+}
+/*GALERIA*/
+.galeria{
+  margin: auto;
+  margin: 1% 8%;
+  width: 80%;
+  height: 100%;
+  background-image: url(images/chloeM.jpg);
+  background-repeat: no-repeat;
+  background-position: left top, left bottom;
+  opacity: 0.8;
+}
+.galeria img{
+  width: 20%;
+  height: 20%;
+  margin: 1% 2%;
+  opacity: 0.3;
+}
+.galeria img:hover{
+  opacity: 0.9;
+}
+.galeria img:active{
+  width: 30%;
+  height: 30%;
 }
 
 /*RESPONSIVE DESING*/
